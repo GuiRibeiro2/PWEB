@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html long="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>
+    <meta name="author" content="Guilherme Ribeiro">
+    <meta name="description" content="API e Integrações - Atividade3">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo"><h1>Atividade3 - API e Integrações</h1></a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#introducao" class="nav-link active">INTRODUÇÃO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#conceitos" class="nav-link">CONCEITOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tipos" class="nav-link">TIPOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ferramentas" class="nav-link">FERRAMENTAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#exemplos" class="nav-link">EXEMPLOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#conclusao" class="nav-link">CONCLUSÃO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#referencias" class="nav-link">REFERÊNCIAS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <main class="corpo-texto" id="corpo-texto">
+        <section class="introducao bd-grid" id="introducao">
+            <div class="introducao-data">
+                <h2 class="Introducao">INTRODUÇÃO</h2>
+                <br>
+                <span class="introducao-title-color">Antes da criação das Application Programming Interface (API),
+                a integração entre aplicações era chamada ponto a ponto. Nessa modalidade, o desenvolvimento era 
+                complicado e demandava grande quantidade de tempo. Com a criação das API, o desenvolvimento de sistemas
+                que integravam mais de um aplicativo tornou-se mais simples e rápido, melhorando a eficiência das equipes 
+                desenvolvedoras.</span>
+            </div>
+        </section>
+        <br>
+        <br>
+         <section class="conceitos bd-grid" id="conceitos">
+            <div class="conceitos-data">
+                <h2 class="conceitos">CONCEITOS</h2>
+                <br>
+                <span class="conceitos-title-color">Para a empresa IBM, uma API é um conjunto de regras ou protocolos que permite que aplicativos de software se comuniquem entre si para trocar dados, recursos e funcionalidades.
+                Para a empresa Red Hat, as interfaces de programação de aplicativos (APIs) são conjuntos de ferramentas, definições e protocolos para a criação de aplicações de software. APIs conectam soluções e serviços, sem a necessidade de saber como esses elementos foram implementados.
+                Para a empresa AWS, APIs são mecanismos que permitem que dois componentes de software se comuniquem usando um conjunto de definições e protocolos. 
+                Essencialmente, não há grandes diferenças entre as definições das três fontes citadas.</span>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <section class="tipos bd-grid" id="tipos">
+            <div class="tipos-data">
+                <h2 class="tipos">TIPOS</h2>
+                <br>
+                <span class="tipos-title-color">Existem diversos tipos de APIs, que podem ser classificadas de acordo com a arquitetura ou finalidade:</span>
+                <li>APIs públicas: disponíveis para desenvolvedores externos, permitindo integração com serviços amplamente utilizados, como redes sociais e sistemas de pagamento;</li>
+                <li>APIs privadas: utilizadas por empresas para integrar sistemas internos e departamentos;</li>
+                <li>APIs de parceiros: compartilhadas com empresas específicas através de acordos comerciais;</li>
+                <li>APIs REST: baseadas no padrão Representational State Transfer (REST), utilizam protocolos HTTP e são bastante empregadas na web;</li>
+                <li>APIs SOAP: utilizam o protocolo Simple Object Access Protocol (SOAP), associadas a sistemas corporativos que exigem maior formalidade e segurança em transações;</li>
+                <li>APIs em sistemas industriais: Podem integrar aplicativos e bancos de dados diferentes, conectando sensores, sistemas de controle e softwares de gestão, como em ambientes de Indústria 4.0.</li>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="ferramentas bd-grid" id="ferramentas">
+            <div class="ferramentas-data">
+                <h2 class="ferramentas">FERRAMENTAS</h2>
+                <br>
+                <span   class="ferramentas-title-color">Diversas ferramentas auxiliam no desenvolvimento, teste e gerenciamento de APIs:
+                <li>Postman: plataforma para testes e documentação de APIs;</li>
+                <li>Swagger (OpenAPI): conjunto de ferramentas para documentação e padronização de APIs do tipo REST;</li>
+                <li>API Gateway: camada intermediária que gerencia requisições, autenticação e controle de tráfego;</li>
+                <li>Frameworks de desenvolvimento: Spring Boot (Java), Express (Node.js) e Django (Python), facilitam o desenvolvimento de APIs com maior nível de robustez e segurança;</li>
+                <li>Plataformas de gerenciamento: soluções oferecidas por provedores de nuvem, como AWS API Gateway, Azure API Management e Google Apigee;</li>
+                Essas ferramentas contribuem para aumentar a produtividade, padronização de processos e garantir melhor segurança das integrações e escalabilidade.</span>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="exemplos bd-grid" id="exemplos">
+            <div class="exemplos-data">
+                <h2 class="exemplos">EXEMPLOS</h2>
+                <br>
+                <span class="exemplos-title-color">Alguns exemplos práticos de uso de APIs incluem:
+                <li>Aplicativos de transporte: utilizam APIs de mapas para calcular rotas e estimar tempo de trajeto;</li>
+                <li>Sistemas bancários: permitem integração com aplicativos financeiros por meio de APIs de Open Banking;</li>
+                <li>E-commerces: possuem finalidade de integrar sistemas de pagamento, frete e emissão de notas fiscais;</li>
+                <li>Redes sociais: disponibilizam APIs para login social e compartilhamento de conteúdo com outras plataformas;</li>    
+                <li>Sistemas corporativos (ERP e CRM): integram dados entre setores como vendas, estoque, administrativo, engenharia, produção, financeiro etc.</li>
+                Esses exemplos demonstram como as APIs estão presentes no dia a dia, viabilizando a integração de serviços e softwares mais completos para os usuários.</span>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="conclusao bd-grid" id="conclusao">
+            <div class="conclusao-data">
+                <h2 class="conclusao">CONCLUSÃO</h2>
+                <br>
+                <span class="conclusao-title-color">
+                Conclui-se que a utilização de API é uma ótima forma de reduzir custos durante o 
+                desenvolvimento de integrações entre sistemas existentes ao simplificar, acelerar a codificação e estabelecer modelos e ferramentas padronizadas para desenvolvedores de sistemas.</span>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="referencias bd-grid" id="referencias">
+            <div class="referencias-data">
+                <h2 class="referencias">REFERÊNCIAS</h2>
+                <br>
+                <span class="referencias-title-color">
+                    <li>Amazon Web Services. O que é uma API? Disponível em:<a href="https://aws.amazon.com/pt/what-is/api"target="_blank">https://aws.amazon.com/pt/what-is/api/</a> . Acesso em: 2 mar. 2026.</li>
+                    <br>
+                    <li>IBM. API integration. Disponível em: <a href="https://www.ibm.com/think/topics/api-integration"target="_blank">https://www.ibm.com/think/topics/api-integration</a>. Acesso em: 2 mar. 2026.</li>
+                    <br>
+                    <li>Red Hat. O que são interfaces de programação de aplicativos (APIs)? Disponível em: <a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces"target="_blank">https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces</a> . Acesso em: 2 mar. 2026.</li>
+                </span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
