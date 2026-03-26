@@ -1,0 +1,59 @@
+body{
+    font-family: "Times New Roman", Tahoma;
+    margin: 0;
+    padding: 10;
+}
+
+.container-box{
+    display: grid; /*mais importante*/
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    /*3 linhas tamanho de cada um*/
+    grid-template-areas: 
+    'z z z z'
+    'a a b b'
+    'a a c c'
+    'd d d d'
+    'e e f f'
+    'e e f f';
+}
+
+.box{
+    background-color: #e3edede4;
+}
+
+.z{
+    grid-area: z;
+    text-align: center;
+}
+
+.a {
+    grid-area: a;
+    text-align: center;
+}
+
+.b {
+    grid-area: b;
+    text-align: center;
+}
+
+.c {
+    grid-area: c;
+    text-align: center;
+}
+
+.d {
+    grid-area: d;
+    text-align: center;
+}
+
+.e {
+    grid-area: e;
+    text-align: center;
+}
+
+.f {
+    grid-area: f;
+    text-align: center;
+}
