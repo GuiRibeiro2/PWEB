@@ -1,0 +1,97 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pagina {
+	padding: 500px;
+	width: 500px;
+	display: left;
+    align-items: left;
+}
+
+	
+.h2{
+	border: solid 1px #060606;
+}
+
+
+/* Media queries*/ 
+
+/*Até 420px*/
+@media (max-width: 420px) {
+	
+	.pagina {
+		background-color: blue ;
+        height: auto;
+        width: auto;
+
+	}
+}
+
+/*Até 768px*/
+@media (min-width: 421px) and (max-width: 768px) {
+
+	.pagina {
+		background-color: orange;
+        height: auto;
+        width: auto;
+	}
+
+}
+
+/*  Até 1024px  */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	.pagina {
+		background-color: violet;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+/* Até 1080px */
+@media (min-width: 1025px) and (max-width: 1080px) {
+
+    .pagina {
+        background-color: red;
+        height: auto;
+        width: auto;
+    }
+    
+}
+
+/* Até 1366px */
+@media (min-width: 1081px) and (max-width: 1366px) {
+
+    .pagina {
+        background-color: purple;
+        height: auto;
+        width: auto;
+    }
+    
+}
+
+/* até 1920 */
+@media (min-width: 1367px) and (max-width: 1920px) {
+
+    .pagina {
+        background-color: yellow;
+        height: auto;
+        width: auto;
+    }
+    
+}
+
+/* maior que 1920px */
+@media (min-width: 1921px) {
+
+    .pagina {
+        background-color: green;
+        height: auto;
+        width: auto;
+    }
+    
+}
