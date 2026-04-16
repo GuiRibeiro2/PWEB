@@ -1,0 +1,12 @@
+body{
+    font-family: "Times New Roman", Tahoma;
+    margin: 0;
+    padding: 10;
+}
+
+.container{
+    padding: 500px;
+	width: 500px;
+	display: left;
+    align-items: left;
+}
