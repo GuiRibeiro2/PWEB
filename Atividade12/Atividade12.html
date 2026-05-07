@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade12</title>
+</head>
+<body>
+    <script>
+        //parte 1:
+        //função construtora:
+        function Area(x, y){
+            this.base = x;
+            this.altura = y;
+            this.areaCalc = x * y;
+            return(this.areaCalc);
+            }
+
+            //recebendo os valores de base e altura
+            let baseRet = parseFloat(prompt("Digite a base do retângulo: "));
+            let alturaRet = parseFloat(prompt("Digite a altura do retângulo: "));
+
+            //criando objeto:
+            let areaRetangulo = new Area(baseRet, alturaRet);
+          
+            //mostrando a área do retângulo no Alert:
+            alert("Área do retângulo: " + areaRetangulo.areaCalc);
+        
+
+            //parte 2:
+            //criando classe pai Conta
+        class Conta {
+            constructor() {
+                this.nomeCorrentista;
+                this.banco;
+                this.numeroConta;
+                this.saldo;
+            }
+            setNomeCorrentista(value){
+                this.nomeCorrentista = value;
+            }
+            getNomeCorrentista(){
+                return this.nomeCorrentista;
+            }
+            setBanco(value){
+                this.banco = value;
+            }
+            getBanco(){
+                return this.banco;
+            }
+            setNumeroConta(value){
+                this.numeroConta = value;
+            }
+            getNumeroConta(){
+                return this.numeroConta;
+            }
+            setSaldo(value){
+                this.saldo = value;
+            }
+            getSaldo(){
+                return this.saldo;
+            }
+        }
+
+        //criando herança Corrente
+         class Corrente extends Conta{
+                constructor(){
+                    //super chama a classe pai 
+                    super();
+                    this.SaldoEsp;
+
+                }
+                setSaldoEsp(value){
+                    this.SaldoEsp = value;
+                }
+                getSaldoEsp(){
+                    return this.SaldoEsp;
+                }
+
+            }
+
+        //criando herança Poupança
+        class Poupanca extends Conta{
+            constructor(){
+                super();
+                this.juros;
+                this.dataVencimento;
+            }
+            setJuros(value){
+                this.juros = value;
+            }
+            getJuros(){
+                return this.juros;
+            }
+            setDataVencimento(value){
+                this.dataVencimento = value;
+            }
+            getDataVencimento(){
+                return this.dataVencimento;
+            }
+        }
+        
+        //Criando objeto conta corrente e recebendo dados:
+        var objCorrente = new Corrente();
+            objCorrente.setNomeCorrentista(prompt("CC Digite o nome: "));
+            objCorrente.setBanco(prompt("CC Digite o banco: "));
+            objCorrente.setNumeroConta(prompt("CC Digite o número da conta: "));
+            objCorrente.setSaldo(prompt("CC Digite o saldo: "));
+            objCorrente.setSaldoEsp(prompt("CC Digite o saldo especial: "));
+
+        //Criando objeto conta poupança e recebendo dados:
+        var objPoupanca = new Poupanca();
+            objPoupanca.setNomeCorrentista(prompt("POU Digite o nome: "));
+            objPoupanca.setBanco(prompt("POU Digite o banco: "));
+            objPoupanca.setNumeroConta(prompt("POU Digite o número da conta: "));
+            objPoupanca.setSaldo(prompt("POU Digite o saldo: "));
+            objPoupanca.setJuros(prompt("POU Digite o valor dos juros: "));
+            objPoupanca.setDataVencimento(prompt("POU Digite a data de vencimento: "));
+
+        //mostrando os dados dos objetos:
+        alert("Conta corrente: ");
+            alert(`nome=${objCorrente.getNomeCorrentista()} banco=${objCorrente.getBanco()} numeroConta=${objCorrente.getNumeroConta()}
+            saldo=${objCorrente.getSaldo()} SaldoEsp=${objCorrente.getSaldoEsp()}`);
+        alert("Conta poupança: ")
+            alert(`nome=${objPoupanca.getNomeCorrentista()} banco=${objPoupanca.getBanco()} numeroConta=${objPoupanca.getNumeroConta()}
+            saldo=${objPoupanca.getSaldo()} juros=${objPoupanca.getJuros()} dataVencimento=${objPoupanca.getDataVencimento()}`);
+
+    </script>
+</body>
+</html>
