@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade14</title>
+</head>
+<body>
+        <div class = "formulario" id = "form">
+        <h1>Digite o que quiser converter:</h1>
+        <input type = "text" id = "campoTexto">
+        <br>
+        <h2>Converter para maiúscula</h2>
+        <input type = "radio" name = "conversor" id = "maiusculas" onclick = "converterTexto()">
+        <br>
+        <h2>Converter para minúscula</h2>
+        <input type = "radio" name = "conversor" id = "minusculas" onclick = "converterTexto()">
+        <br>
+        <br>
+        <input name = "Reset" type = "reset" form = "form" value = "Tente Outra Vez">
+    </div>
+
+        <script>
+        function converterTexto() {
+            let entradaTexto = document.getElementById("campoTexto");
+            let textoDigitado = entradaTexto.value;
+
+            if (document.getElementById("maiusculas").checked) {
+                entradaTexto.value = textoDigitado.toUpperCase();
+            } else if (document.getElementById("minusculas").checked) {
+                entradaTexto.value = textoDigitado.toLowerCase();
+            }
+        }
+    </script>
+</body>
+</html>
