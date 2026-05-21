@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade15</title>
+    <script>
+
+        function validarDados() {
+
+            alert("AQUI!!");
+            
+            if (document.forms.formulario1.elements[0].value == "" || document.forms.formulario1.elements[0].value.length < 10) {
+                alert("Mínimo de 10 caracteres em Nome!");
+                document.forms.formulario1.elements[0].focus();
+                return false;
+            };
+
+
+            if (document.forms.formulario1.elements["idEmail"].value == "" || document.forms.formulario1.elements["idEmail"].value.indexOf('@') == -1 || document.forms.formulario1.elements["idEmail"].value.indexOf('.') == -1) {
+                alert("Sobre o e-mail, tente outra vez!");
+                document.forms.formulario1.elements.idEmail.focus();
+               return false;
+            }
+
+
+            if (document.forms.formulario1.elements.idComentario.value == "" || document.forms.formulario1.elements.idComentario.value.length < 20) {
+                alert("Até sua redação do ENEM teve mais caracteres! 20 no mínimo, por favor!");
+                document.getElementById("idComentario").focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        function responderPesquisa(){
+            if(document.getElementById("sim").checked){
+                alert("Volte sempre à esta página!");
+            } else if(document.getElementById("nao").checked){
+                alert("Que bom que você voltou a visitar esta página!");
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <form action="" method="POST" name="formulario1" id="formulario1" onsubmit="return validarDados();">
+
+        <div id="principal" style="width: 400px; margin: 0 auto; text-align: left;">
+            Nome:
+            <input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+            <br>
+            <br>E-Mail:
+            <input name="idEmail" type="email" id="idEmail" size="52" maxlength="150">
+            <br>
+            <br>Comentário:
+            <br>
+            <textarea name="idComentario" cols="60" rows="8" id="idMensagem"></textarea>
+            <br>
+            <br> Primeira vez que visita a página??
+            <br>
+            <input type = "radio" name = "pesquisa" id = "sim" onclick = "responderPesquisa()"> Sim, é a primeira vez.
+            <input type = "radio" name = "pesquisa" id = "nao" onclick = "responderPesquisa()"> Não.
+            <br>
+            <br>
+            <input name="Submit" type="submit" form="formulario1" value="Enviar">
+            <input name="Reset" type="reset" form="formulario1" value="Limpar">
+        </div>
+    </form>
+</body>
+
+</html>
